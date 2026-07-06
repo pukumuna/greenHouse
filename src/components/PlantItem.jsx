@@ -1,14 +1,13 @@
 import CareScale from './CareScale'
 import '../styles/PlantItem.css'
 
-const handleClick = (e) => {
-  console.log('✨ Ceci est un clic ✨', ' pour ', e)
+const handleClick = (plantName) => {
+	alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`)
 }
 
-//function PlantItem({ id, cover, name, water, light }) {
-const PlantItem = ({ id, cover, name, water, light }) => {
+const PlantItem = ({ cover, name, water, light }) => {
 	return (
-		<li  className='lmj-plant-item' onClick={handleClick(name)}>
+		<li className='lmj-plant-item' onClick={() => handleClick(name)}>
 			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
 			{name}
 			<div>
