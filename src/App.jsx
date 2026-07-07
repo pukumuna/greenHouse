@@ -1,12 +1,12 @@
 import Banner from './components/Banner'
-import Cart from './components/Cart.jsx'
+import Cart from './components/Cart'
 import logo from './assets/logo.png'
 import { useState } from 'react'
 import Footer from './components/Footer.jsx'
-import ShoppingList from './components/ShoppingList.jsx'
+import ShoppingList from './components/ShoppingList'
 
 const App = () => {
-  const [cart, updateCart] = useState(0)
+  const [cart, updateCart] = useState([])
 
   return (
     <div>
